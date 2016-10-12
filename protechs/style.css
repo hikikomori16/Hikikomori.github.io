@@ -648,3 +648,21 @@ line-height: 210px;
 .bubblegum p {
     margin: 5px auto;
 }
+
+.props {
+    background-color: #fff;
+}
+
+.props a.highslide {
+    display: block;
+    font-size: 0;
+}
+
+.props tr {
+    height: 35px;
+}
+
+.props img {
+    border: 0;
+    width: 150px;
+}
