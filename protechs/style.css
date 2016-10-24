@@ -227,7 +227,7 @@ min-height:540px;
 	font-size:large;
 	text-align:center;
 	margin: 0 auto;
-	padding-bottom:0.5em;
+	/*padding-bottom:0.5em;*/
 }
 
 .caption_pad {
@@ -713,3 +713,42 @@ line-height: 210px;
 .hide:checked + label + div {
     display: block; 
 }
+
+.ts_table td {
+    padding-right: 5px;
+}
+
+.breadcrumbs {
+    font-size: 0;
+    margin:5px 0 10px -12px;
+    text-align: left;
+}
+
+.breadcrumbs ul {
+    background: -moz-linear-gradient(left, rgba(161,219,255,1) 0%, rgba(203,235,255,0.46) 53%, rgba(239,249,255,0) 99%, rgba(240,249,255,0) 100%);
+    background: -webkit-linear-gradient(left, rgba(161,219,255,1) 0%,rgba(203,235,255,0.46) 53%,rgba(239,249,255,0) 99%,rgba(240,249,255,0) 100%);
+    background: linear-gradient(to right, rgba(161,219,255,1) 0%,rgba(203,235,255,0.46) 53%,rgba(239,249,255,0) 99%,rgba(240,249,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1dbff', endColorstr='#00f0f9ff',GradientType=1 );
+    padding: 10px 5px;
+    display: inline-block;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    font-size: 13px;
+    margin:0 12px;
+    position: relative;
+}
+
+.breadcrumbs li:not(:first-child)::before {
+    background-color: #000;
+    content: "";
+    height: 5px;
+    left: -14px;
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: 7px;
+    width: 5px;
+}
+
+
