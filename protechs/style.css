@@ -662,9 +662,13 @@ line-height: 210px;
     width: 100%;
 }
 
+.props a {
+    color: rgb(94, 62, 255);
+    text-decoration: underline;
+}
+
 .props a.highslide {
     display: block;
-    font-size: 0;
 }
 
 .props tr {
