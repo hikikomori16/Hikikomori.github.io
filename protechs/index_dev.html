@@ -8,6 +8,14 @@
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <title>Главная страница - Компания «Протехс»</title>
+        <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+        <script type='text/javascript'>
+            (function($) {
+                $(function() {
+                    $("#special").load("special/special.txt");
+                })
+            })(jQuery)
+        </script> 
     </head>
     <body>
 <!-- Yandex.Metrika counter -->
@@ -53,6 +61,10 @@
             </div>
             <div id="content" class="rel">
                 <img src="images/indexBg.jpg" width="995" height="455" alt="" >
+                <div class="specialWrap">
+                    Товар Месяца
+                    <p id="special"></p>
+                </div>
                  <ul id="navbottom">
                     <li><a href="index.html">Главная</a></li>
                     <li><a href="katepa.html">Катера</a></li>

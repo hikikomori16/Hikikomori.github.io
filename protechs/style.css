@@ -134,6 +134,11 @@ a:hover {
 #content {
 min-height:540px;
 }
+
+#content.rel {
+    position: relative;
+}
+
 .main {
 	background-image: url(images/catalog_.png);
 	width:570px;
@@ -753,6 +758,21 @@ line-height: 210px;
     transform: rotate(45deg);
     bottom: 7px;
     width: 5px;
+}
+
+.specialWrap {
+    background-color: rgba(200,255,255,.6);
+    border-radius: 15px;
+    min-height: 100px;
+    right: 25px;
+    padding: 10px 10px 0 10px;
+    position: absolute;
+    top: 50px;
+    width: 300px;
+}
+
+.specialWrap p {
+    
 }
 
 
