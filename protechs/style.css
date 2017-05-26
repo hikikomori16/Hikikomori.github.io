@@ -21,7 +21,9 @@ body {
 	color:#fff;
     background-repeat: no-repeat;
 	font:13px trebuchet MS;
-	background-color: #C7C7C7;
+	background: #d5e0e2 url("images/sea.jpg") repeat-x;
+    background-size: cover;
+    background-attachment: fixed; 
 	line-height: 1.5; 
 }
 a {
@@ -40,7 +42,7 @@ a:hover {
 	background-image:url(images/background.png);
 	background-repeat:repeat-x;
 	background-position: 0px 180px;
-	background-color: #bbffff;
+	background-color: rgba(187,255,255,.8);
 	position:relative;	
 }
 
@@ -61,13 +63,13 @@ a:hover {
     padding:0;
     height:180px;
     top:0;
-    background-color:#fff;
+    background-color: #fff;
     z-index:1;
 }
 #logo {
     height:155px;
     width: 1000px;
-    background-image: url(images/logo.jpg);
+    background-image: url(images/logo.png);
 }
 #nav {
 	position:absolute;
