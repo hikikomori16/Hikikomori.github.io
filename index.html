@@ -2,17 +2,102 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Select page</title>
+    <title>Портфолио</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="sitePreview">
-        <a class="protechs" href="protechs/index.html" data-name="Протехс">
-            <img src="img/protechsPreview.jpg" alt="Протехс" height="300" width="400">
+    <div class="site-preview">
+        <a class="site-preview__link" href="technomart/index.html" data-id="technomart" data-name="Техномарт">
+            <img src="img/technomartPreview.jpg" class="site-preview__image" alt="Техномарт" height="300" width="400">
         </a>
-        <a class="glaccy" href="gllacy/index.html" data-name="Глейси">
-            <img src="img/gllacyPreview.jpg" alt="Глейси" height="300" width="400">
+        <a class="site-preview__link" href="gllacy/index.html" data-id="glaccy" data-name="Глейси">
+            <img src="img/gllacyPreview.jpg" class="site-preview__image" alt="Глейси" height="300" width="400">
+        </a>
+        <a class="site-preview__link" href="pink/index.html" data-id="pink" data-name="Пинк">
+            <img src="img/pinkPreview.jpg" class="site-preview__image" alt="Глейси" height="300" width="400">
         </a>
     </div>
+    <div class="site-about site-about-technomart">
+        <div class="site-about__content">
+            <div class="site-about__content-image">
+                <img src="img/technomartMain.jpg" alt="Техномарт" height="730" width="600">
+            </div>
+            <div class="site-about__content-info">
+                <p class="site-about__content-text site-about__content-text--about">
+                    <span class="site-about__content-text-caption">О макете</span>
+                    Макет "Техномарт" - сверстан мной в рамках восьмого базового интенсива от HTMLAcademy
+                </p>
+                <p class="site-about__content-text site-about__content-text--techs">
+                    <span class="site-about__content-text-caption">Используемые технологии</span>
+                    HTML5, CSS3, JS, растровые спрайты
+                </p>
+                <p class="site-about__content-text  site-about__content-text--links">
+                    <span class="site-about__content-text-caption">Ссылки</span>
+                    <a href="https://github.com/Hikikomori/83559-technomart" target="_blank">Репозиторий на GitHub</a><br>
+                    <a href="technomart/index.html" target="_blank">Сверстанный макет</a>
+                </p>
+            </div> 
+            <button class="site-about__content-close">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="site-about site-about-glaccy">
+        <div class="site-about__content">
+            <div class="site-about__content-image">
+                <img src="img/gllacyMain.jpg" alt="Глейси" height="730" width="600">
+            </div>
+            <div class="site-about__content-info">
+                <p class="site-about__content-text site-about__content-text--about">
+                    <span class="site-about__content-text-caption">О макете</span>
+                     Макет "Глейси" - сверстан мной в рамках пятнадцатого базового интенсива от HTMLAcademy
+                </p>
+                <p class="site-about__content-text site-about__content-text--techs">
+                    <span class="site-about__content-text-caption">Используемые технологии</span>
+                    HTML5, CSS3, JS, растровые спрайты, CSS-слайдер, API яндекс-карт (кастомный маркер на карте)
+                </p>
+                <p class="site-about__content-text  site-about__content-text--links">
+                    <span class="site-about__content-text-caption">Ссылки</span>
+                    <a href="https://github.com/Hikikomori/83559-gllacy" target="_blank">Репозиторий на GitHub</a><br>
+                    <a href="gllacy/index.html" target="_blank">Сверстанный макет</a>
+                </p>
+            </div> 
+            <button class="site-about__content-close">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="site-about site-about-pink">
+        <div class="site-about__content">
+            <div class="site-about__content-image">
+                <img src="img/pinkMain.jpg" alt="Пинк" height="730" width="600">
+            </div>
+            <div class="site-about__content-info">
+                <p class="site-about__content-text site-about__content-text--about">
+                    <span class="site-about__content-text-caption">О макете</span>
+                    Макет "Пинк" - сверстан мной в рамках десятого продвинутого интенсива от HTMLAcademy
+                </p>
+                <p class="site-about__content-text site-about__content-text--techs">
+                    <span class="site-about__content-text-caption">Используемые технологии</span>
+                    HTML5, CSS3, JS, SVG, БЭМ, FlexBox, препроцессор SASS, сборщик Gulp, Адаптивная верстка, Ретиновая графика, API яндекс-карт (кастомный маркер на карте)
+                </p>
+                <p class="site-about__content-text  site-about__content-text--links">
+                    <span class="site-about__content-text-caption">Ссылки</span>
+                    <a href="https://github.com/Hikikomori/83559-pink" target="_blank">Репозиторий на GitHub</a><br>
+                    <a href="pink/index.html" target="_blank">Сверстанный макет</a>
+                </p>
+            </div> 
+            <button class="site-about__content-close">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>

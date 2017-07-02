@@ -1,13 +1,17 @@
 body {
     background: rgb(48,48,48) url("img/noise.png") repeat fixed;
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
-.sitePreview {
+.site-preview {
     font-size: 0;
     text-align: center;
 }
 
-.sitePreview a{
+.site-preview__link{
     border-radius: 6px;
     box-shadow: none;
     display: inline-block;
@@ -18,13 +22,13 @@ body {
     width: 400px;
 }
 
-.sitePreview a::after {
+.site-preview__link::after {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%);
     border-radius: 0 0 6px 6px;
     bottom: 0;
     color: #fff;
     content: attr(data-name);
-    font-size: 20px;
+    font-size: 16px;
     height: 0;
     left: 0;
     line-height: 75px;
@@ -36,14 +40,100 @@ body {
     transition-duration: 0.7s;
 }
 
-.sitePreview a:hover {
+.site-preview__link:hover {
     box-shadow: 0px 0px 0px 3px rgb(0,173,238), 0px 0px 15px rgba(0,173,238,.5);
 }
 
-.sitePreview a:hover::after {
+.site-preview__link:hover::after {
     height: 75px;
 }
 
-.sitePreview img {
+.site-preview__image {
     border-radius: 6px;
+}
+
+.site-about {
+    background-color: rgba(0,0,0,.6); 
+    display: none; 
+    height: 100%; 
+    left: 0; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+}
+
+.site-about--visible {
+    display: block;
+} 
+
+.site-about__content {
+    background-color: rgba(255,255,255,.9);
+    border-radius: 30px;
+    bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    left: 70px;
+    padding: 30px;
+    position: absolute;
+    right: 70px;
+    top: 70px;
+}
+
+
+.site-about__content-image {
+    border-right: 2px solid #f25b26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 630px;
+}
+
+.site-about__content-info {
+    flex-grow: 1;
+    padding: 0 30px;
+}
+
+.site-about__content-text {
+    padding-left: 50px;
+    position: relative;
+}
+
+.site-about__content-text-caption {
+    display: block;
+    font-weight: bold;
+    margin-left: -10px;
+}
+
+.site-about__content-text::after {
+    background-image: url("../img/icons.png");
+    content: "";
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+
+.site-about__content-text--about::after {
+    background-position: 0 0; 
+}
+
+.site-about__content-text--techs::after {
+    background-position: -32px 0; 
+}
+
+.site-about__content-text--links::after {
+    background-position: -64px 0; 
+}
+
+.site-about__content-close {
+    align-self: flex-start;
+    background-color: transparent;
+    border: none;
+}
+
+.site-about__content-close:hover {
+    fill: #f25b26;
 }
