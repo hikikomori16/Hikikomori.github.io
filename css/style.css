@@ -7,14 +7,15 @@ body {
 }
 
 .site-preview {
-    font-size: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .site-preview__link{
     border-radius: 6px;
     box-shadow: none;
-    display: inline-block;
     height: 300px;
     margin: 10px;
     position: relative;
