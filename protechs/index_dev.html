@@ -9,13 +9,6 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <title>Главная страница - Компания «Протехс»</title>
         <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
-        <script type='text/javascript'>
-            (function($) {
-                $(function() {
-                    $("#special").load("special/special.txt");
-                })
-            })(jQuery)
-        </script> 
     </head>
     <body>
 <!-- Yandex.Metrika counter -->
@@ -61,7 +54,7 @@
             </div>
             <div id="content" class="rel">
                 <img src="images/indexBg.jpg" width="995" height="455" alt="" >
-                <div class="specialWrap">
+                <div id="specialWrap" class="specialWrap">
                     Товар Месяца
                     <p id="special"></p>
                 </div>
@@ -84,5 +77,27 @@ style="width:88px; height:31px; border:0;margin-top: 20px;" alt="Яндекс.М
             </div>
             <div id="bottom"></div>
         </div>
+        <div class="popup">
+            <div class="popup__content">
+                <button class="popup__close"></button>
+                <h2 class="popup__heading">Внимание, Акция</h2>
+                <p class="popup__text"></p>
+                <div class="popup__input-label-pair">
+                    <input type="checkbox">
+                    <label for="">Больше не показывать</label>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript'>
+            var spcWrap = document.querySelector("#specialWrap");    
+
+            (function($) {
+                $(function() {
+                    $(".popup__text").load("special/special.txt", function() {
+                        if(!$("#special").html()) {spcWrap.classList.add("specialWrap--hidden")};
+                    })
+                })
+            })
+        </script> 
     </body>
 </html>
