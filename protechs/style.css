@@ -828,13 +828,20 @@ line-height: 210px;
 
 .popup__heading {
     color: #ff3a3a;
-    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
     line-height: 64px;
+    text-align: left;
+    padding: 10px 60px 0;
 }
 
 .popup__text {
     flex-grow: 1;
-    padding: 0 15px;
+    font-size: 24px;
+    margin-top: 0;
+    padding: 0 60px;
+    text-align: left;
 }
 
 .popup__input-label-pair {
@@ -852,7 +859,7 @@ line-height: 210px;
 .popup__label::after {
     border: 2px solid #000;
     content: "";
-    height: 16px;
+    height: 18px;
     left: -25px;
     line-height: 15px;
     position: absolute;
