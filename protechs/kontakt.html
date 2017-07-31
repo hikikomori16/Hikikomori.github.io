@@ -79,7 +79,7 @@
 450079, г.Уфа, ул.Пархоменко 155а<br>
 Телефон: +7 (347) 248-10-94<br>
 Факс: +7 (347) 248-10-67<br>
-E-mail: <a href="mailto:protechs-ufa@mail.ru">protechs-ufa@mail.ru</a><br>
+E-mail: <a class="open-feedback" href="mailto:protechs-ufa@mail.ru">protechs-ufa@mail.ru</a><br>
 </p>
 <p>
 <b>Часы работы</b><br>
@@ -89,10 +89,41 @@ E-mail: <a href="mailto:protechs-ufa@mail.ru">protechs-ufa@mail.ru</a><br>
 </p>
 <a class="dg-widget-link" href="http://2gis.ru/ufa/firm/2393065583816105/center/55.968915224075324,54.7452289672616/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Уфы</a><div class="dg-widget-link"><a href="http://2gis.ru/ufa/center/55.96892,54.745155/zoom/17/routeTab/rsType/bus/to/55.96892,54.745155╎Протехс, ООО, торговая компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Протехс, ООО, торговая компания</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":54.7452289672616,"lon":55.968915224075324,"zoom":17},"opt":{"city":"ufa"},"org":[{"id":"2393065583816105"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
 </div>
-<div id="bottom"></div>
+<div class="feedback">
+    <h2 class="feedback__heading">Обратная связь</h2>
+    <button class="modal__close feedback__close">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+            <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+        </svg>
+    </button>
+    <form action="contact-form.php" class="feedback__form" method="POST">
+        <div class="input-label-pair feedback__input-label-pair">
+            <label class="feedback__label" for="name">Ваше Имя*</label>
+            <input class="feedback__input" name="name" id="name" type="text" required="required">
+        </div>
+        <div class="input-label-pair feedback__input-label-pair">
+            <label class="feedback__label" for="tel">Контактный телефон</label>
+            <input class="feedback__input" name="tel" id="tel" type="tel">
+        </div>
+        <div class="input-label-pair feedback__input-label-pair">
+            <label class="feedback__label" for="email">E-mail адрес*</label>
+            <input class="feedback__input" name="email" id="email" type="email" required="required">
+        </div>
+        <div class="input-label-pair feedback__input-label-pair">
+            <label class="feedback__label" for="city">Населенный пункт</label>
+            <input class="feedback__input" name="city" id="city" type="text">
+        </div>
+        <div class="input-label-pair feedback__input-label-pair">
+            <label class="feedback__label" for="message">Ваше сообщение*</label>
+            <textarea class="feedback__textarea" name="message" id="message" required="required"></textarea>
+        </div>
+        <button class="feedback__submit" type="submit">Отправить</button>
+    </form>
 </div>
+<div id="bottom"></div>
 
 
 
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

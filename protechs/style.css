@@ -781,6 +781,19 @@ line-height: 210px;
     
 }
 
+.modal__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    right: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+.modal__close:hover {
+    fill: #f25b26;
+}
+
 .popup {
     background-color: rgba(0,0,0,.5);
     color: #000;
@@ -811,19 +824,6 @@ line-height: 210px;
     margin: 150px 0;
     position: relative;
     width: 800px;
-}
-
-.popup__close {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    right: 10px;
-    position: absolute;
-    top: 15px;
-}
-
-.popup__close:hover {
-    fill: #f25b26;
 }
 
 .popup__heading {
@@ -863,5 +863,97 @@ line-height: 210px;
 .popup__input:checked+.popup__label::after {
     content: "✔";
 }
+
+.feedback {
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px 0 rgba(41,52,73,.75);
+    color: #000;
+    left: 50%;
+    padding: 50px;
+    position: fixed;
+    transform: translate(-50%, 100%);
+    transition: transform .6s ease-out;
+    top: 50%;  
+    z-index: 1;  
+}
+
+.feedback--visible {
+    transform: translate(-50%, -50%); 
+}
+
+.feedback__close {
+    right: 5px;
+    top: 10px;
+    transform: scale(.7);
+}
+
+.feedback__heading {
+    text-align: center;
+    transform: translateY(-25px);
+}
+
+.feedback__form {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__input-label-pair {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+}
+
+.feedback__label {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 175px;
+    vertical-align: middle;
+}
+
+.feedback__input {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+}   
+
+.feedback__textarea {
+    min-height: 100px;
+    padding: 5px;
+    resize: none;
+}
+
+.feedback__input,
+.feedback__textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    min-width: 250px;
+}
+
+.feedback__submit {
+    align-self: center;
+    background: #59d;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 1px rgba(0,0,0,.1), inset 0 -10px 20px rgba(0,0,0,.1);
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; 
+    min-width: 110px;
+    margin: 15px 5px;
+    padding: 10px 35px 12px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2);
+    transform: translateY(20px);
+}
+
+.feedback__submit:hover {
+    background: #48c;
+}
+
+.feedback__submit:active {
+    background: #37b;
+}  
 
 
