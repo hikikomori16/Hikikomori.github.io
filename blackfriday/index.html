@@ -10,6 +10,7 @@
     <link href="f/css/flipclock.css" rel="stylesheet">
     <link href="f/css/main.css" rel="stylesheet">
     <link href="f/css/blackfriday.css" rel="stylesheet">
+    <link href="f/css/jquery.parallax.css" rel="stylesheet">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
@@ -144,6 +145,11 @@
 <div class="wrapper wrapper--blackfriday">
 
     <div class="middle">
+        <ul class="blackfriday__parallax-list">
+            <li class="blackfriday__parallax-item"></li>
+            <li class="blackfriday__parallax-item"></li>
+            <li class="blackfriday__parallax-item"></li>
+        </ul>
         <div class="middle__body">
 
             <div class="container">
@@ -263,6 +269,7 @@
 </footer><!-- .footer -->
 
 <script src="http://obi-diy.coding.dev.bstd.ru/f/js/main.min.js"></script>
+<script src="f/js/mouse.parallax.js"></script>
 <script src="f/js/flipclock.min.js"></script>
 <script type="text/javascript">
             var clock;
@@ -284,6 +291,8 @@
                     countdown: true,
                     language: "russian"
                 });
+
+                $(".blackfriday__parallax-item").mouseParallax({});
             });
         </script>
 
