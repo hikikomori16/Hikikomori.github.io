@@ -201,18 +201,20 @@
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .wrapper--blackfriday .middle {
-    background-position-x: left; }
+    background-image: url("../i/blackfriday_bg_mobile.jpg");
+    background-repeat: no-repeat; }
   .wrapper--blackfriday .middle__body {
-    padding: 110px 10px 60px 10px; }
+    padding: 240px 10px 60px 10px; }
   .wrapper--blackfriday .content {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
   .blackfriday-about {
     width: 100%; }
   .blackfriday-about__form {
     margin: 0;
     width: 100%; }
   .blackfriday-counter {
+    margin-bottom: 20px;
     width: 100%; } }
