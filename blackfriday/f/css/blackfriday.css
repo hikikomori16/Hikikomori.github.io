@@ -13,13 +13,37 @@
   .wrapper--blackfriday .middle__body {
     margin: 0 auto;
     max-width: 1080px;
-    padding: 110px 40px 60px 40px; }
+    padding: 110px 40px 60px 40px;
+    position: relative;
+    z-index: 2; }
   .wrapper--blackfriday .content {
     color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0; }
+
+.blackfriday__parallax-list {
+  height: 788px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1; }
+
+.blackfriday__parallax-item {
+  height: 1065px;
+  position: absolute;
+  width: 1920px; }
+
+.blackfriday__parallax-item:nth-child(1) {
+  background-image: url("../i/blackfriday_parallax_l1.png"); }
+
+.blackfriday__parallax-item:nth-child(2) {
+  background-image: url("../i/blackfriday_parallax_l2.png"); }
+
+.blackfriday__parallax-item:nth-child(3) {
+  background-image: url("../i/blackfriday_parallax_l3.png"); }
 
 .blackfriday-about {
   width: 50%; }
