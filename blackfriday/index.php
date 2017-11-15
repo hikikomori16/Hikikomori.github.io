@@ -187,12 +187,17 @@ $xml_data = "<customer><email>" .$_POST['data']. "</email></customer>";
 <div class="wrapper wrapper--blackfriday">
 
     <div class="middle">
+        <ul class="blackfriday__parallax-list">
+            <li class="blackfriday__parallax-item"></li>
+            <li class="blackfriday__parallax-item"></li>
+            <li class="blackfriday__parallax-item"></li>
+        </ul>
         <div class="middle__body">
 
             <div class="container">
                 <main class="content">
                     <div class="blackfriday-about">
-                        <h1 class="blackfriday-about__heading">Получите скидку первыми!</h1>
+                        <h1 class="blackfriday-about__heading">Получите скидку первым!</h1>
                         <p class="blackfriday-about__text">В Черную пятницу вы сможете купить товары ОБИ по&nbsp;специальным ценам. А чтобы узнать заранее, какие товары будут участвовать в акции и цены на них, оставьте свой email в поле ниже, на который мы пришлем Вам письмо с анонсом распродажи!</p>
                         <form action="/" class="blackfriday-about__form" method="POST">
                             <div class="blackfriday-about__input-label-pair blackfriday-about__input-label-pair--email">
@@ -306,6 +311,7 @@ $xml_data = "<customer><email>" .$_POST['data']. "</email></customer>";
 </footer><!-- .footer -->
 
 <script src="http://obi-diy.coding.dev.bstd.ru/f/js/main.min.js"></script>
+<script src="f/js/mouse.parallax.js"></script>
 <script src="f/js/flipclock.min.js"></script>
 <script type="text/javascript">
             var clock;
@@ -327,6 +333,8 @@ $xml_data = "<customer><email>" .$_POST['data']. "</email></customer>";
                     countdown: true,
                     language: "russian"
                 });
+
+                $(".blackfriday__parallax-item").mouseParallax({});
             });
         </script>
 

@@ -217,16 +217,22 @@
 
 .blackfriday-counter__clock {
   margin-left: 18px;
-  margin-bottom: 37px; }
+  margin-bottom: 37px;
+  padding: 0; }
 
 @media only screen and (max-width: 1023px), only screen and (max-device-width: 1023px) {
+  .wrapper--blackfriday .middle {
+    background-image: url("../i/blackfriday_bg_tablet.jpg");
+    background-repeat: no-repeat;
+    background-position-x: right; }
   .wrapper--blackfriday .middle__body {
     padding: 110px 20px 60px 20px; } }
 
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .wrapper--blackfriday .middle {
     background-image: url("../i/blackfriday_bg_mobile.jpg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position-x: center; }
   .wrapper--blackfriday .middle__body {
     padding: 240px 10px 60px 10px; }
   .wrapper--blackfriday .content {
@@ -235,10 +241,17 @@
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse; }
   .blackfriday-about {
+    text-align: center;
     width: 100%; }
+  .blackfriday-about__text {
+    margin: 16px auto; }
   .blackfriday-about__form {
     margin: 0;
     width: 100%; }
   .blackfriday-counter {
     margin-bottom: 20px;
-    width: 100%; } }
+    width: 100%; }
+  .blackfriday-counter__clock {
+    margin: 0 auto 37px auto;
+    padding-left: 18px;
+    width: 320px; } }
