@@ -45,6 +45,31 @@
 .blackfriday__parallax-item:nth-child(3) {
   background-image: url("../i/blackfriday_parallax_l3.png"); }
 
+.blackfriday__parallax-item:nth-child(4) {
+  background-image: url("../i/blackfriday_parallax_l4.png"); }
+
+.blackfriday__parallax-item:nth-child(5) {
+  background-image: url("../i/blackfriday_parallax_l5.png"); }
+
+.blackfriday__button {
+  background-color: #ffee02;
+  border-radius: 4px;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-family: ObiSansMLBold, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  height: 53px;
+  letter-spacing: -0.01em;
+  line-height: 53px;
+  margin-bottom: 10px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  width: 100%; }
+
 .blackfriday-about {
   width: 50%; }
 
@@ -68,8 +93,6 @@
 .blackfriday-about__form {
   margin-left: 5px;
   width: 81%; }
-  .blackfriday-about__form .blackfriday-about__form-submit-ok-text {
-    display: none; }
   .blackfriday-about__form--submit-ok {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -85,7 +108,7 @@
     .blackfriday-about__form--submit-ok .blackfriday-about__input-label-pair,
     .blackfriday-about__form--submit-ok .blackfriday-about__form-submit {
       display: none; }
-    .blackfriday-about__form--submit-ok .blackfriday-about__form-submit-ok-text {
+    .blackfriday-about__form--submit-ok .blackfriday-about__form-submit-ok {
       display: block; }
 
 .blackfriday-about__input-label-pair {
@@ -151,42 +174,29 @@
 .blackfriday-about__input-checkbox:checked + .blackfriday-about__label-checkbox::after {
   color: #000; }
 
-.blackfriday-about__form-submit {
-  background-color: #ffee02;
-  border-radius: 4px;
-  border: none;
-  color: #000;
-  cursor: pointer;
-  font-family: ObiSansMLBold, Arial, sans-serif;
-  font-size: 24px;
-  font-weight: normal;
-  height: 53px;
-  letter-spacing: -0.01em;
-  line-height: 53px;
-  margin-bottom: 10px;
-  outline: none;
-  text-align: center;
-  width: 100%; }
+.blackfriday-about__form-submit-ok {
+  display: none;
+  height: 100%;
+  margin-top: -106px;
+}  
 
 .blackfriday-about__form-submit-ok-text {
   font-family: Open Sans, Arial, sans-serif;
-  font-size: 19px;
-  height: 135px;
-  line-height: 24px;
-  margin: 0;
-  padding-left: 103px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 50px 0 15px 0;
+  min-height: 85px;
+  padding-left: 96px;
   position: relative; }
   .blackfriday-about__form-submit-ok-text::after {
-    color: #02f800;
-    content: "✓";
-    font-family: ObiSansMLBold, Arial, sans-serif;
-    font-weight: normal;
-    font-size: 105px;
-    left: -15px;
+    background-image: url("../i/blackfriday_submit_check-mark.png");
+    content: "";
+    height: 68px;
+    left: 0;
     position: absolute;
-    text-align: center;
-    top: 36px;
-    width: 100px; }
+    top: 0;
+    width: 75px; }
 
 .blackfriday-obigroup-popup {
   background-color: #fff;
@@ -197,6 +207,10 @@
   padding: 8px;
   position: absolute;
   top: 22px; }
+
+.blackfriday-obigroup-popup-trigger {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
 
 .blackfriday-obigroup-popup-trigger:hover + .blackfriday-obigroup-popup {
   display: block; }
