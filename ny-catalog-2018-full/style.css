@@ -232,25 +232,48 @@ html, body
 
 
 
-
-
-.at .at_down_btn
-{
+.at .at_down_btn {
+	align-items: center;
+	display: flex;
+	flex-direction: column-reverse;
 	position: absolute;
-	display: block;
 	cursor: pointer;
+	z-index: 5;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 80px;
+	width: 100px;
+	height: 90px;
+}
+
+.at .at_down_btn::before {
+	bottom: 50px;
+	color: #fff;
+	content: "Смотреть коллекцию";
+	font: 400 18px/20px ObiSansMLBold;
+	height: 40px;
+	left: 50%;
+	letter-spacing: -0.015em;
+	text-align: center;
+	transform: translateX(-50%);
+	position: absolute;
+	width: 100px;
+}
+
+
+.at .at_down_btn_arrow
+{
+	position: relative;
+	display: block;
 	width: 38px;
 	height: 38px;
 	border-radius: 50%;
 	background: #fff;
-	z-index: 5;
-	left: 50%;
-	margin-left: -19px;
-	bottom: 80px;
 	border: 2px solid #000;
+
 }
 
-.at .at_down_btn:before
+.at .at_down_btn_arrow:before
 {
 	content: "";
 	position: absolute;
@@ -263,7 +286,7 @@ html, body
 	transform: rotate(225deg); top: 9px; left: 11px;
 }
 
-.at .at_down_btn:after
+.at .at_down_btn_arrow:after
 {
 	content: "";
 	position: absolute;
@@ -276,7 +299,7 @@ html, body
 	left: 3px;
 }
 
-.at.at_desktop .at_down_btn:hover
+.at.at_desktop .at_down_btn_arrow:hover
 {
 	background: #fafafa;
 }
