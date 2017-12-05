@@ -289,6 +289,8 @@
                 // Calculate the difference in seconds between the future and current date
                 var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
+                if (diff<0) {diff=0}
+
                 // Instantiate a coutdown FlipClock
                 clock = $('.blackfriday-counter__clock').FlipClock(diff, {
                     clockFace: 'DailyCounter',
