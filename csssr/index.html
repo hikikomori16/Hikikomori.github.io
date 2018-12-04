@@ -47,181 +47,250 @@
 	</head>
 
 	<body class="page">
-		<div class="page__wrap">
-			<main class="main-content">
-				<h1 class="main-content__heading">Дело</h1>
-				<div class="interview">
-					<div class="interview__fieldset interview__fieldset--personal-data">
-						<div class="interview__input-label-pair">
-							<label for="name">Полное ФИО</label>
-							<div class="interview__input-wrap">
-								<input name="name" id="name" value="Прусаков Максим Сергеевич">
+		<div class="page__inner">
+			<header class="header page__header">
+				<div class="header__logo">
+					<img src="assets/images/header_logo.png" width="154" height="52" alt="CSSSR" title="Логотип CSSSR" class="header__logo-image"
+					/>
+				</div>
+				<div class="header__secret">
+					<img src="assets/images/header_secret.png" width="252" height="106" alt="Секретно" title="Штамп &amp;quot;Секретно&amp;quot;"
+					 class="header__secret-image" />
+				</div>
+				<h1 class="header__heading">ДЕЛО</h1>
+			</header>
+			<main class="content page__content" role="main">
+				<div class="personal-data content__personal-data">
+					<ul class="personal-data__list">
+						<li class="personal-data__item">
+							<div class="input-text personal-data__input">
+								<label for="fullname" class="input-text__label">Полное ФИО</label>
+								<input type="text" name="fullname" id="fullname" value="Прусаков Максим Сергеевич" class="input-text__input"
+								/>
 							</div>
-						</div>
-						<div class="interview__input-label-pair">
-							<label for="year">Год рождения</label>
-							<div class="interview__input-wrap">
-								<input name="year" id="year" value="1989">
+						</li>
+						<li class="personal-data__item">
+							<div class="input-text personal-data__input">
+								<label for="birthyear" class="input-text__label">Год рождения</label>
+								<input type="text" name="birthyear" id="birthyear" value="1989" class="input-text__input" />
 							</div>
-						</div>
-						<div class="interview__input-label-pair">
-							<label for="home">Место жительства</label>
-							<div class="interview__input-wrap">
-								<input name="home" id="home" value="г. Уфа, Россия">
+						</li>
+						<li class="personal-data__item">
+							<div class="input-text personal-data__input">
+								<label for="location" class="input-text__label">Место жительства</label>
+								<input type="text" name="location" id="location" value="г. Уфа, Россия" class="input-text__input"
+								/>
 							</div>
-						</div>
-						<div class="interview__input-label-pair">
-							<label for="skype">Скайп</label>
-							<div class="interview__input-wrap">
-								<input name="skype" id="skype" value="prusakov.ms@gmail.com ,hikki_komori">
+						</li>
+						<li class="personal-data__item">
+							<div class="input-text personal-data__input">
+								<label for="skype" class="input-text__label">Скайп</label>
+								<input type="text" name="skype" id="skype" value="hikki_komori" class="input-text__input" />
 							</div>
-						</div>
-						<div class="interview__input-label-pair">
-							<label for="email">Почта</label>
-							<div class="interview__input-wrap">
-								<input name="email" id="email" type="email" value="prusakov.ms@gmail.com">
+						</li>
+						<li class="personal-data__item">
+							<div class="input-text personal-data__input">
+								<label for="email" class="input-text__label">Почта</label>
+								<input type="text" name="email" id="email" value="prusakov.ms@gmail.com" class="input-text__input" />
 							</div>
-						</div>
-					</div>
-					<div class="interview__fieldset interview__fieldset--skills">
-						<h2 class="interview__fieldset-heading">Расскажите о себе чекбоксами</h2>
-						<p class="interview__fieldset-about">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше
-							шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете
-							справляться.</p>
-						<div class="interview__fieldset-wrap">
-							<div class="interview__input-label-pair">
-								<input name="BEM" id="BEM" type="checkbox" checked="checked">
-								<label for="BEM">БЭМ/OOCSS</label>
+						</li>
+					</ul>
+				</div>
+				<div class="skills content__skills">
+					<h2 class="heading skills__heading">Расскажите о себе чекбоксами</h2>
+					<p class="subheading skills__subheading">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше
+						шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете
+						справляться.</p>
+					<ul class="skills__list">
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="bem" value="bem" checked="checked" class="input-checkbox__input" />
+								<label for="bem" class="input-checkbox__label">БЭМ/OOCSS</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Jade" id="Jade" type="checkbox" checked="checked">
-								<label for="Jade">Pug (Jade)</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="jade" value="jade" checked="checked" class="input-checkbox__input" />
+								<label for="jade" class="input-checkbox__label">Pug (Jade)</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Stylus" id="Stylus" type="checkbox" checked="checked">
-								<label for="Stylus">Stylus/LESS/SASS</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="stylus" value="stylus" checked="checked" class="input-checkbox__input" />
+								<label for="stylus" class="input-checkbox__label">Stylus/LESS/SASS</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="SVG" id="SVG" type="checkbox" checked="checked">
-								<label for="SVG">Работаю с SVG</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="svg" value="svg" checked="checked" class="input-checkbox__input" />
+								<label for="svg" class="input-checkbox__label">Работаю с SVG</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Semantic" id="Semantic" type="checkbox">
-								<label for="Semantic">Верстаю семантично</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="semantic" value="semantic" class="input-checkbox__input" />
+								<label for="semantic" class="input-checkbox__label">Верстаю семантично</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="A11Y" id="A11Y" type="checkbox">
-								<label for="A11Y">Accessibility (A11Y)</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="a11y" value="a11y" class="input-checkbox__input" />
+								<label for="a11y" class="input-checkbox__label">Accessibility (A11Y)</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="ES" id="ES" type="checkbox">
-								<label for="ES">ES2015/ES2016</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="es" value="es" class="input-checkbox__input" />
+								<label for="es" class="input-checkbox__label">ES2015/ES2016</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Gulp" id="Gulp" type="checkbox" checked="checked">
-								<label for="Gulp">Gulp/GRUNT</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="gulp" value="gulp" checked="checked" class="input-checkbox__input" />
+								<label for="gulp" class="input-checkbox__label">Gulp/GRUNT</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Webpack" id="Webpack" type="checkbox">
-								<label for="Webpack">Webpack</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="webpack" value="webpack" class="input-checkbox__input" />
+								<label for="webpack" class="input-checkbox__label">Webpack</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="WebGL" id="WebGL" type="checkbox">
-								<label for="WebGL">Дружу с WebGL</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="webgl" value="webgl" class="input-checkbox__input" />
+								<label for="webgl" class="input-checkbox__label">Дружу с WebGL</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="jQuery" id="jQuery" type="checkbox" checked="checked">
-								<label for="jQuery">jQuery</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="jquery" value="jquery" checked="checked" class="input-checkbox__input" />
+								<label for="jquery" class="input-checkbox__label">jQuery</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Angular" id="Angular" type="checkbox">
-								<label for="Angular">Знаю/изучаю Angular</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="angular" value="angular" class="input-checkbox__input" />
+								<label for="angular" class="input-checkbox__label">Знаю/изучаю Angular</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="React" id="React" type="checkbox">
-								<label for="React">Знаю/изучаю React</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="react" value="react" class="input-checkbox__input" />
+								<label for="react" class="input-checkbox__label">Знаю/изучаю React</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Node" id="Node" type="checkbox">
-								<label for="Node">Знаю/изучаю Node.js</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="nodejs" value="nodejs" class="input-checkbox__input" />
+								<label for="nodejs" class="input-checkbox__label">Знаю/изучаю Node.js</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Git" id="Git" type="checkbox" checked="checked">
-								<label for="Git">Использую Git</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="git" value="git" checked="checked" class="input-checkbox__input" />
+								<label for="git" class="input-checkbox__label">Использую Git</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Accurate Eye" id="Accurate Eye" type="checkbox">
-								<label for="Accurate Eye">С глазомером всё ок</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="Accurate-Eye" value="Accurate-Eye" checked="checked" class="input-checkbox__input"
+								/>
+								<label for="Accurate-Eye" class="input-checkbox__label">С глазомером всё ок</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Blog" id="Blog" type="checkbox">
-								<label for="Blog">Читаю
-									<a href="http://blog.csssr.ru">blog.csssr.ru</a>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="blog" value="blog" class="input-checkbox__input" />
+								<label for="blog" class="input-checkbox__label">Читаю
+									<a href="http://blog.csssr.ru" class="input-checkbox__label-link">blog.csssr.ru</a>
 								</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="Lazy" id="Lazy" type="checkbox" checked="checked">
-								<label for="Lazy">Я ленивый(-ая)</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="lazy" value="lazy" class="input-checkbox__input" />
+								<label for="lazy" class="input-checkbox__label">Я ленивый(-ая)</label>
 							</div>
-							<div class="interview__input-label-pair">
-								<input name="English" id="English" type="checkbox" checked="checked">
-								<label for="English">У меня хороший английский</label>
+						</li>
+						<li class="skills__item">
+							<div class="input-checkbox skills__input">
+								<input type="checkbox" name="skills" id="english" value="english" checked="checked" class="input-checkbox__input"
+								/>
+								<label for="english" class="input-checkbox__label">У меня хороший английский</label>
 							</div>
-						</div>
+						</li>
+					</ul>
+				</div>
+				<div class="skills-js content__skills-js">
+					<h2 class="heading skills-js__heading">Уровень владения JavaScript</h2>
+					<div id="skills-js__slider" class="skills-js__slider dragdealer">
+						<div class="skills-js__slider-arrow handle"></div>
+						<input type="text" name="skill_js" id="skill_js" value="0.5" class="skills-js__slider-value" />
 					</div>
-					<div class="interview__fieldset interview__fieldset--JS">
-						<h2 class="interview__fieldset-heading">Уровень владения JavaScript</h2>
-						<div id="interview__slider" class="interview__slider dragdealer">
-							<div class="interview__slider-arrow handle"></div>
-						</div>
-						<div class="interview__fieldset-wrap">
-							<p class="interview__slider-caption">Не владею</p>
-							<p class="interview__slider-caption">Использую готовые решения</p>
-							<p class="interview__slider-caption">Использую готовые решения
+					<ul class="skills-js__captions">
+						<li class="skills-js__caption">
+							<p class="skills-js__caption-text">Не владею</p>
+						</li>
+						<li class="skills-js__caption">
+							<p class="skills-js__caption-text">Использую готовые решения</p>
+						</li>
+						<li class="skills-js__caption">
+							<p class="skills-js__caption-text">Использую готовые решения
 								<br> и умею их переделывать</p>
-							<p class="interview__slider-caption">Пишу сложный JS с нуля</p>
-						</div>
-					</div>
-					<div class="interview__fieldset interview__fieldset--about-me">
-						<h2 class="interview__fieldset-heading">Расскажите о себе словами</h2>
-						<p class="interview__fieldset-about">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово,
-							если при нехватке места для текста строки будут добавляться автоматически.</p>
-						<textarea id="about-me">Версткой&ensp;занимаюсь&ensp;с&ensp;2011&ensp;года,&ensp;как&ensp;в&ensp;организациях,&ensp;так&ensp;и&ensp;фриланс.&ensp;В&ensp;феврале-апреле&ensp;2017&ensp;года&ensp;принял&ensp;участие&ensp;в&ensp;продвинутом&ensp;интенсиве&ensp;HTML&ensp;Academy,&ensp;с&ensp;целью&ensp;подтянуть&ensp;свои&ensp;знания&ensp;до&ensp;современного&ensp;уровня.&ensp;Также&ensp;способен&ensp;довольно&ensp;быстро&ensp;разобраться&ensp;в&ensp;чем-то&ensp;новом,&ensp;с&ensp;чем&ensp;ранее&ensp;не&ensp;сталкивался.&ensp;От&ensp;работы&ensp;в&ensp;CSSSR&ensp;ожидаю&ensp;интересные&ensp;задачи&ensp;и&ensp;достойную&ensp;оплату&ensp;труда</textarea>
-					</div>
-					<div class="interview__fieldset interview__fieldset--plans">
-						<h2 class="interview__fieldset-heading">Какие у вас планы на будущее?</h2>
-						<p class="interview__fieldset-about">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
-						<div class="interview__fieldset-wrap">
-							<div class="interview__input-label-pair">
-								<input id="Markup" name="plans" type="radio">
-								<label for="Markup">Верстать</label>
-							</div>
-							<div class="interview__input-label-pair">
-								<input id="JS" name="plans" type="radio" checked="checked">
-								<label for="JS">Прокачиваться в JS</label>
-							</div>
-							<div class="interview__input-label-pair">
-								<input id="Management" name="plans" type="radio">
-								<label for="Management">Менеджерство</label>
-							</div>
-							<div class="interview__input-label-pair">
-								<input id="Other" name="plans" type="radio">
-								<label for="Other">Другое</label>
-							</div>
-						</div>
-					</div>
-					<div class="interview__fieldset interview__fieldset--date">
-						<div class="interview__input-label-pair">
-							<label for="date">Дата заполнения</label>
-							<div class="interview__input-wrap">
-								<input name="date" id="date" value="14.07.2017">
-							</div>
-						</div>
+						</li>
+						<li class="skills-js__caption">
+							<p class="skills-js__caption-text">Пишу сложный JS с нуля</p>
+						</li>
+					</ul>
+				</div>
+				<div class="about content__about">
+					<h2 class="heading about__heading">Расскажите о себе словами</h2>
+					<p class="subheading about__subheading">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово,
+						если при нехватке места для текста строки будут добавляться автоматически.</p>
+					<div class="input-textarea about__textarea">
+						<textarea class="input-textarea__textarea">Версткой&ensp;занимаюсь&ensp;с&ensp;2011&ensp;года,&ensp;как&ensp;в&ensp;организациях,&ensp;так&ensp;и&ensp;фриланс.&ensp;Знаю&ensp;HTML5,&ensp;CSS3,&ensp;Flexbox,&ensp;БЭМ,&ensp;SVG,&ensp;JS&ensp;(на&ensp;уровне&ensp;несложных&ensp;UI&ensp;скриптов).&ensp;Большой&ensp;опыт&ensp;адаптивной&ensp;верстки.&ensp;Также&ensp;есть&ensp;опыт&ensp;верстки&ensp;html-писем,&ensp;работы&ensp;с&ensp;Git,&ensp;препроцессорами&ensp;SCSS,&ensp;Stylus,&ensp;шаблонизатором&ensp;Pug.js,&ensp;сборщиком&ensp;Gulp.&ensp;От&ensp;работы&ensp;в&ensp;CSSSR&ensp;ожидаю&ensp;интересные&ensp;задачи&ensp;и&ensp;достойную&ensp;оплату&ensp;труда.</textarea>
 					</div>
 				</div>
+				<div class="plans content__plans">
+					<h2 class="heading plans__heading">Какие у вас планы на будущее?</h2>
+					<p class="subheading plans__subheading">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+					<ul class="plans__list">
+						<li class="plans__item">
+							<div class="input-radio plans__input">
+								<input type="radio" name="plans" id="htmlcss" value="htmlcss" class="input-radio__input" />
+								<label for="htmlcss" class="input-radio__label">Верстать</label>
+							</div>
+						</li>
+						<li class="plans__item">
+							<div class="input-radio plans__input">
+								<input type="radio" name="plans" id="js" value="js" checked="checked" class="input-radio__input" />
+								<label for="js" class="input-radio__label">Прокачиваться в JS</label>
+							</div>
+						</li>
+						<li class="plans__item">
+							<div class="input-radio plans__input">
+								<input type="radio" name="plans" id="management" value="management" class="input-radio__input" />
+								<label for="management" class="input-radio__label">Менеджерство</label>
+							</div>
+						</li>
+						<li class="plans__item">
+							<div class="input-radio plans__input">
+								<input type="radio" name="plans" id="other" value="other" class="input-radio__input" />
+								<label for="other" class="input-radio__label">Другое</label>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</main>
+			<footer class="footer page__footer">
+				<div class="input-text input-text_date footer__input">
+					<label for="date" class="input-text__label">Дата заполнения</label>
+					<input type="text" name="date" id="date" value="27.07.2018" class="input-text__input" />
+				</div>
+			</footer>
 		</div>
-		<script src="assets/scripts/app.min.js"></script>
 	</body>
+	<script src="assets/scripts/app.min.js"></script>
 
 </html>
