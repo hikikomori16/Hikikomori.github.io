@@ -1,163 +1,333 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
+<script language="JavaScript"> 
+var numraindrops="150";
+var speed="5";
+var rainsize="2";
+var wind="left";
+var genxgallery="";
+
+function tb5_makeArray(n){ this.length = n; return this.length;
+}
+tb5_messages = new tb5_makeArray(3);
+tb5_messages[0] = "Networking Engineer";
+tb5_messages[1] = "Sofi A";
+tb5_messages[2] = "Coding Of Your Self";
+tb5_rptType = 'infinite';
+tb5_rptNbr = 10;
+tb5_speed = 50;
+tb5_delay = 2000;
+var tb5_counter=1;
+var tb5_currMsg=0;
+var tb5_stsmsg="";
+function tb5_shuffle(arr){
+var k;
+for (i=0; i<arr.length; i++){ k = Math.round(Math.random() * (arr.length - i - 1)) + i; temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+}
+return arr;
+}
+tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_";
+}
+tb5_arr = tb5_shuffle(tb5_arr);
+function tb5_init(n){
+var k;
+if (n == tb5_arr.length){ if (tb5_currMsg == tb5_messages.length-1){ if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){ clearTimeout(tb5_timerID); return; } tb5_counter++; tb5_currMsg=0; } else{ tb5_currMsg++; } n=0; tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length); tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length); for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){ tb5_arr[i] = i; tb5_sts[i] = "_"; } tb5_arr = tb5_shuffle(tb5_arr); tb5_sp=tb5_delay;
+}
+else{ tb5_sp=tb5_speed; k = tb5_arr[n]; tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k); tb5_stsmsg = ""; for (var i=0; i<tb5_sts.length; i++) tb5_stsmsg += tb5_sts[i]; document.title = tb5_stsmsg; n++; } tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+}
+function tb5_randomizetitle(){ tb5_init(0);
+}
+tb5_randomizetitle();
+
+</script> 
+<br>
+                            <center>
+                                <marquee scrollamount="25" width="600">--------------------------</marquee>
+
+
+                                <table border="1" cellpadding="10">
+
+                                        <link rel="stylesheet" type="text/css" href="tampilan.css">
+
+<ul id="float">                                     
+                <font face="Orbitron" size="2" color="white"></li>
+
+<li><a href="http://nonameid.org/" title="home"><font face=" Geneva"" size=4 style="color: white; text-shadow: 0px 1px 4px white;">Beranda</a>
+<a href="http://nonameid.org/search/label" title="about"><font face="Georgia" size=4 style="color: white; text-shadow: 0px 1px 4px white;">Daftar Isi</a></li>
+<li><a href="http://hikikomori.6te.net/login.html" target="_blank" title="Login"><font face="Georgia" size=4 style="color: white; text-shadow: 0px 1px 4px white;">Login</a></li>
+<li><a href="https://www.anonallindo.org/" target="_blank" title="Artikel"><font face="Georgia" size=4 style="color: white; text-shadow: 0px 1px 4px white;">Artikel</a></li>
+<li><a href="https://www.anonallindo.org/2019/11/halo-guys-jumpa-lagi-sama-gua-hell.html" target="_blank" title="Materi"><font face="Georgia" size=4 style="color: white; text-shadow: 0px 1px 4px white;">Materi</a></li>
+</ul></div>
+                                    </tr>
+                                </table>
+                                <marquee scrollamount="25" width="600">--------------------------</marquee></center>
+
+
+                                <br>
+
+<style type='text/css'>body,a,a:link{cursor:url(http://cur.cursors-4u.net/cursors/cur-2/cur117.cur), default}a:hover{cursor:url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur),wait}</style>
+<onmousedown="return false;" onselectstart="return false" ondragstart="return false">
+<center>
+
+<title>!~ 'ANON ALL INDO' ~!</title><br>
+
+<meta name="description" content="Bogo" />
+<meta name="keywords" content="IT Networking" />
+<meta name="author" content="IT Networking">
+<meta content='IT Networking' name='Abstract' />
+<meta content='IT Networking' name='subject' />
+<meta content='IT Networking' name='copyright' />
+<meta name="robots" content="all" />
+<meta name="robots schedule" content="auto" />
+<meta name="distribution" content="global" />
+<link rel="icon" href="logo.jpg" />
+</br>
+
+
+
+<body bgcolor="black">
+
+    <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Amatic%20SC' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Grand%20Hotel
+' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie%20Flower' rel='stylesheet' type='text/css'>
+
+    <base target='_blank' />
     <meta charset="UTF-8">
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="site-preview">
-        <a class="site-preview__link" href="technomart/index.html" data-id="technomart" data-name="Техномарт">
-            <img src="img/technomartPreview.jpg" class="site-preview__image" alt="Техномарт" height="300" width="400">
-        </a>
-        <a class="site-preview__link" href="gllacy/index.html" data-id="glaccy" data-name="Глейси">
-            <img src="img/gllacyPreview.jpg" class="site-preview__image" alt="Глейси" height="300" width="400">
-        </a>
-        <a class="site-preview__link" href="pink/index.html" data-id="pink" data-name="Пинк">
-            <img src="img/pinkPreview.jpg" class="site-preview__image" alt="Пинк" height="300" width="400">
-        </a>
-        <a class="site-preview__link" href="csssr/index.html" data-id="csssr" data-name="Дело">
-            <img src="img/csssrPreview.jpg" class="site-preview__image" alt="Double V" height="300" width="400">
-        </a>
-        <a class="site-preview__link" href="doublev/index.html" data-id="doublev" data-name="Double V">
-            <img src="img/doublevPreview.jpg" class="site-preview__image" alt="Double V" height="300" width="400">
-        </a>
-    </div>
-    <div class="site-about site-about-technomart">
-        <div class="site-about__content">
-            <div class="site-about__content-image">
-                <img src="img/technomartMain.jpg" alt="Техномарт" height="730" width="600">
-            </div>
-            <div class="site-about__content-info">
-                <p class="site-about__content-text site-about__content-text--about">
-                    <span class="site-about__content-text-caption">О макете</span>
-                    Макет "Техномарт" - сверстан мной в рамках восьмого базового интенсива от HTMLAcademy
-                </p>
-                <p class="site-about__content-text site-about__content-text--techs">
-                    <span class="site-about__content-text-caption">Используемые технологии</span>
-                    HTML5, CSS3, JS, растровые спрайты
-                </p>
-                <p class="site-about__content-text  site-about__content-text--links">
-                    <span class="site-about__content-text-caption">Ссылки</span>
-                    <a href="https://github.com/Hikikomori/83559-technomart" target="_blank">Репозиторий на GitHub</a><br>
-                    <a href="technomart/index.html" target="_blank">Сверстанный макет</a>
-                </p>
-            </div> 
-            <button class="site-about__content-close">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="site-about site-about-glaccy">
-        <div class="site-about__content">
-            <div class="site-about__content-image">
-                <img src="img/gllacyMain.jpg" alt="Глейси" height="730" width="600">
-            </div>
-            <div class="site-about__content-info">
-                <p class="site-about__content-text site-about__content-text--about">
-                    <span class="site-about__content-text-caption">О макете</span>
-                     Макет "Глейси" - сверстан мной в рамках пятнадцатого базового интенсива от HTMLAcademy
-                </p>
-                <p class="site-about__content-text site-about__content-text--techs">
-                    <span class="site-about__content-text-caption">Используемые технологии</span>
-                    HTML5, CSS3, JS, растровые спрайты, CSS-слайдер, API яндекс-карт (кастомный маркер на карте)
-                </p>
-                <p class="site-about__content-text  site-about__content-text--links">
-                    <span class="site-about__content-text-caption">Ссылки</span>
-                    <a href="https://github.com/Hikikomori/83559-gllacy" target="_blank">Репозиторий на GitHub</a><br>
-                    <a href="gllacy/index.html" target="_blank">Сверстанный макет</a>
-                </p>
-            </div> 
-            <button class="site-about__content-close">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="site-about site-about-pink">
-        <div class="site-about__content">
-            <div class="site-about__content-image">
-                <img src="img/pinkMain.jpg" alt="Пинк" height="730" width="600">
-            </div>
-            <div class="site-about__content-info">
-                <p class="site-about__content-text site-about__content-text--about">
-                    <span class="site-about__content-text-caption">О макете</span>
-                    Макет "Пинк" - сверстан мной в рамках десятого продвинутого интенсива от HTMLAcademy
-                </p>
-                <p class="site-about__content-text site-about__content-text--techs">
-                    <span class="site-about__content-text-caption">Используемые технологии</span>
-                    HTML5, CSS3, JS, SVG, БЭМ, FlexBox, препроцессор SCSS, сборщик Gulp, Адаптивная верстка, Ретиновая графика, API яндекс-карт (кастомный маркер на карте)
-                </p>
-                <p class="site-about__content-text  site-about__content-text--links">
-                    <span class="site-about__content-text-caption">Ссылки</span>
-                    <a href="https://github.com/Hikikomori/83559-pink" target="_blank">Репозиторий на GitHub</a><br>
-                    <a href="pink/index.html" target="_blank">Сверстанный макет</a>
-                </p>
-            </div> 
-            <button class="site-about__content-close">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="site-about site-about-csssr">
-        <div class="site-about__content">
-            <div class="site-about__content-image">
-                <img src="img/csssrMain.jpg" alt="Дело" height="730" width="600">
-            </div>
-            <div class="site-about__content-info">
-                <p class="site-about__content-text site-about__content-text--about">
-                    <span class="site-about__content-text-caption">О макете</span>
-                    Макет "Дело" - тестовое задание для CSSSR
-                </p>
-                <p class="site-about__content-text site-about__content-text--techs">
-                    <span class="site-about__content-text-caption">Используемые технологии</span>
-                    HTML5, CSS3, JS, БЭМ, FlexBox, препроцессор Stylus, препроцессор/шаблонизатор Jade, сборщик Gulp
-                </p>
-                <p class="site-about__content-text  site-about__content-text--links">
-                    <span class="site-about__content-text-caption">Ссылки</span>
-                    <a href="https://github.com/Hikikomori/csssr-test-project" target="_blank">Репозиторий на GitHub</a><br>
-                    <a href="csssr/index.html" target="_blank">Сверстанный макет</a>
-                </p>
-            </div> 
-            <button class="site-about__content-close">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <div class="site-about site-about-doublev">
-        <div class="site-about__content">
-            <div class="site-about__content-image">
-                <img src="img/doublevMain.jpg" alt="Double V" height="730" width="600">
-            </div>
-            <div class="site-about__content-info">
-                <p class="site-about__content-text site-about__content-text--about">
-                    <span class="site-about__content-text-caption">О макете</span>
-                    Макет "Double V"
-                </p>
-                <p class="site-about__content-text site-about__content-text--techs">
-                    <span class="site-about__content-text-caption">Используемые технологии</span>
-                    HTML5, CSS3, JS, SVG, БЭМ, FlexBox, препроцессор SCSS, сборщик Gulp, Адаптивная верстка
-                </p>
-                <p class="site-about__content-text  site-about__content-text--links">
-                    <span class="site-about__content-text-caption">Ссылки</span>
-                    <a href="https://github.com/Hikikomori/Double_V" target="_blank">Репозиторий на GitHub</a><br>
-                    <a href="doublev/index.html" target="_blank">Сверстанный макет</a>
-                </p>
-            </div> 
-            <button class="site-about__content-close">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
-                    <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <script src="js/script.js" type="text/javascript"></script>
-</body>
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://pastebin.com/raw/n52AeSLi">
+    <style type="text/css">
+        <link rel="stylesheet"href="style.css"><style type="text/css">body {
+            font: 14px sans-serif;
+            text-align: center;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <center><a href="https://hikikomori.6te.net" target="_blank"><img src="logo.jpg"
+                    style="opacity:0.4;filter:alpha(opacity=40)"
+                    onmouseover="this.style.opacity=1;this.filters.alpha.opacity=100"
+                    onmouseout="this.style.opacity=0.4;this.filters.alpha.opacity=40" height="400" weight="300" <br></a>
+        </center>
+        
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>ANON ALL INDO</title> 
+<link rel="shortcut icon" href=" :) "/> 
+</head> 
+
+
+
+ 
+<script type="text/javascript"> 
+//BH?SS?AN 
+TypingText = function(element, interval, cursor, finishedCallback) { 
+  if((typeof document.getElementById == "undefined") || (typeof  
+
+element.innerHTML == "undefined")) { 
+    this.running = true; 
+    return; 
+  } 
+  this.element = element; 
+  this.finishedCallback = (finishedCallback ? finishedCallback : function() {  
+
+return; }); 
+  this.interval = (typeof interval == "undefined" ? 100 : interval); 
+  this.origText = this.element.innerHTML; 
+  this.unparsedOrigText = this.origText; 
+  this.cursor = (cursor ? cursor : ""); 
+  this.currentText = ""; 
+  this.currentChar = 0; 
+  this.element.typingText = this; 
+  if(this.element.id == "") this.element.id = "typingtext" +  
+
+TypingText.currentIndex++; 
+  TypingText.all.push(this); 
+  this.running = false; 
+  this.inTag = false; 
+  this.tagBuffer = ""; 
+  this.inHTMLEntity = false; 
+  this.HTMLEntityBuffer = ""; 
+} 
+TypingText.all = new Array(); 
+TypingText.currentIndex = 0; 
+TypingText.runAll = function() { 
+  for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run(); 
+} 
+TypingText.prototype.run = function() { 
+  if(this.running) return; 
+  if(typeof this.origText == "undefined") { 
+    setTimeout("document.getElementById('" + this.element.id +  
+
+"').typingText.run()", this.interval); 
+    return; 
+  } 
+  if(this.currentText == "") this.element.innerHTML = ""; 
+  if(this.currentChar < this.origText.length) { 
+    if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) { 
+      this.tagBuffer = "<"; 
+      this.inTag = true; 
+      this.currentChar++; 
+      this.run(); 
+      return; 
+    } else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) { 
+      this.tagBuffer += ">"; 
+      this.inTag = false; 
+      this.currentText += this.tagBuffer; 
+      this.currentChar++; 
+      this.run(); 
+      return; 
+    } else if(this.inTag) { 
+      this.tagBuffer += this.origText.charAt(this.currentChar); 
+      this.currentChar++; 
+      this.run(); 
+      return; 
+    } else if(this.origText.charAt(this.currentChar) == "&" && ! 
+
+this.inHTMLEntity) { 
+      this.HTMLEntityBuffer = "&"; 
+      this.inHTMLEntity = true; 
+      this.currentChar++; 
+      this.run(); 
+      return; 
+    } else if(this.origText.charAt(this.currentChar) == ";" &&  
+
+this.inHTMLEntity) { 
+      this.HTMLEntityBuffer += ";"; 
+      this.inHTMLEntity = false; 
+      this.currentText += this.HTMLEntityBuffer; 
+      this.currentChar++; 
+      this.run(); 
+      return; 
+    } else if(this.inHTMLEntity) { 
+      this.HTMLEntityBuffer += this.origText.charAt(this.currentChar); 
+      this.currentChar++; 
+      this.run(); 
+      return; 
+    } else { 
+      this.currentText += this.origText.charAt(this.currentChar); 
+    } 
+    this.element.innerHTML = this.currentText; 
+    this.element.innerHTML += (this.currentChar < this.origText.length - 1 ?  
+
+(typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) :  
+
+""); 
+    this.currentChar++; 
+    setTimeout("document.getElementById('" + this.element.id +  
+
+"').typingText.run()", this.interval); 
+  } else { 
+    this.currentText = ""; 
+    this.currentChar = 0; 
+        this.running = false; 
+        this.finishedCallback(); 
+  } 
+} 
+</script> 
+
+
+
+
+
+<div id="wrapper">
+ 
+  <div class="box">
+<div id="console">
+ 
+<p id="message">
+<font color="#009900"> Please Wait . . . </font> <br> 
+
+<font color="#F00000"><font color="#FFF000"> IT Networking</font></br>
+<font color="#F00000"><font color="#FFF000"> Menerima pemasangan jaringan.</font><br>
+<font color="#F00000"><font color="#FFF000"> Installasi jaringan mikrotik</font></br>
+
+<font color="green">sofiagustinatkj@gmail.com</br> 
+<br> 
+<br> 
+<font face="Orbitron" size="2" color="#ADFF2F">
+                                    <br>
+                                   
+   
+
+<script type="text/javascript"> 
+new TypingText(document.getElementById("message"), 50, function(i){ var ar  
+
+= new Array("|", "|", "|", "|"); return " " + ar[i.length % ar.length]; }); 
+
+//Type out examples: 
+TypingText.runAll(); 
+
+</script></font></font></font></font></font></font></font></font></font> |</span></p>
+</div>
+<font color="gray"><font color="white"><font color="white"><font color="white"><font color="green"><font color="green"> 
+  <div class="spacer">
+</div>
+<center>
+  </center>
+</font></font></font></font></font></font></div>
+</div>
+</body></html> 
+
+</body> 
 </html>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+                                
+ 	<br>
+   <a href="https://www.facebook.com/100016072117044/posts/519079051971161/?substory_index=0&app=fbl"><img src="fb.png"width="100" height="80" /></a>
+    <a href="https://www.instagram.com/sofiagustina023/"><img src="ig.png"width="100" height="80" /></a>
+        <a href="https://chat.whatsapp.com/KczqQgyJmr25vArSHoDF8c"><img src="wa.jpg"width="100" height="80" /></a>
+        <a href="https://chat.whatsapp.com/KczqQgyJmr25vArSHoDF8c"><img src="yt.jpg"width="100" height="80" /></a>
+<br>
+
+                                <font face="Orbitron" size="2" color="#ADFF2F">
+                                    <br>
+                                   
+    
+<img src="tenor.gif"width="100" height="80" />
+  <font face="Grand Hotel" size="4" color="#FFFAF0">Copyright &copy; 2019 - <font 
+                                            face="Amatic SC" size="3" color="#FFFAF0">Sofi A</font><img
+                    src="one.gif"
+                    width="100" height="80" />
+                                        <!-- #PERCAYA -->
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+                                        </div>
+                                        </div>
+
+<center>
+  </center>
+</font></font></font></font></font></font></div>
+</div>
+ </center>
+    </body>
+
+
+</html>
+
